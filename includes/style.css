@@ -24,6 +24,7 @@ textarea#originaltext, textarea#convertedtext {
 	color:#333;
 	height:200px;
 	max-width: 40%;
+	font-size:1.5em;
 }
 img#arrowimg {
 	width:8%;
