@@ -5,23 +5,36 @@ html, body, h1, h2, h3, h4, h5, h6 {
 
 h1.cover-heading {
 	font-size: 4em;
-	color:#050505;
+	color:#5F0E78;
 }
 
 .cover {
-	padding: 70px 20px;
+	padding: 45px 20px;
 }
 
 .masthead, .mastfoot {
 	position:relative;
 }
 
-textarea.text {
+textarea#originaltext, textarea#convertedtext {
 	background-color: #ccc;
-	margin-top:50px;
+	margin-top:30px;
 	padding:5px;
-	width:90%;
+	width:40%;
 	color:#333;
+	height:200px;
+	max-width: 40%;
+}
+img#arrowimg {
+	width:8%;
+	float:center;
+	margin-top:110px;
+}
+textarea#originaltext {
+	float:left;
+}
+textarea#convertedtext {
+	float:right;
 }
 
 .mastfoot p {
@@ -34,4 +47,25 @@ textarea.text {
 
 .nav, .masthead-brand, .text-section {
 	text-align: center;
+}
+
+p {
+	color:#000;
+}
+
+a, a:focus, a:hover {
+color: #5F0E78;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color:#5F0E78;
+}
+
+.masthead-nav > li > a {
+padding-left: 0;
+padding-right: 0;
+font-size: 16px;
+font-weight: bold;
+color: rgba(33,33,33,.75);
+border-bottom: 2px solid transparent;
 }
