@@ -2,7 +2,6 @@
 
 <html lang="en">
 <head>
-
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +9,7 @@
 
 <meta name="author" content="Yves Courtois">
 <link rel="shortcut icon" href="includes/favicon.png">
-<link rel="canonical" href="http://ungender.me/"/>
+<link rel="canonical" href="http://ungender.me/bugs.html"/>
 
 <meta name="description" content="ungender.me, because gender-neutral text is important.">
 <meta property="og:description" content="ungender.me, because gender-neutral text is important.">
@@ -61,38 +60,38 @@
 
           <div class="masthead clearfix">
             <div class="inner">
-              <h3 class="masthead-brand"><a href="http://ungender.me/" style="text-decoration:none;">ungender.me</a></h3>
+              <h3 class="masthead-brand"><a href="http://ungender.me" style="text-decoration:none;">ungender.me</a></h3>
               <ul class="nav masthead-nav">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li  class="active"><a href="contact.html">Contact</a></li>
               </ul>
             </div>
           </div>
 
           <div class="inner cover">
-            <h1 class="cover-heading" style="text-align:center;">ungender.me</h1>
-            <p class="lead" style="text-align:center;">Enter your text and get the gender out of it.</p>
-            <p style="text-align:center;">You get to choose your pronouns, just how it should be.</p>
+            <div id ="contact">
+              <h1 class="cover-heading" style="text-align:center; font-size:6em;">Contact</h1>
+              <p class="lead" style="text-align:center; font-size:2em;">
 
-            <form id="textForm" style="text-align:center;height:300px;margin-top:40px;">
-              <select id="pronouns">
-                <option value="">Select pronouns..</option>
-                <option value="they_them" >they/them</option>
-                <option value="ze_zir" >ze/zir</option>
-                <option value="ze_hir" >ze/hir</option>
-                <option value="xe_xir" >xe/xir</option>
-              </select>
-    
-              <br>
-              <img id="arrowimg" src="includes/arrow.png" style="vertical-align:middle" />
-              <textarea id="originaltext"></textarea>
-              <textarea id="convertedtext"></textarea>
-            </form>
-   
-            <p class="lead" style="clear:both; text-align:center;margin-top:10px">
-              <a href="" class="btn btn-lg btn-default" id="convertBtn">Convert</a>
-            </p>
+                info@ungender.me
+              </p>
+            </div>
+            <div id ="bugs">
+              <h1 class="cover-heading" style="text-align:center; font-size:6em;">Bugs</h1>
+              <p class="lead" style="text-align:center; font-size:2em;">
+                 Make sure to include the text, chosen pronouns, and a small description.
+                This will help us understand and verify flaws in our algorithms.
+                <br><br>
+                Web app <a href="https://github.com/yvescourtois/ungenderme">GitHub</a>.<br>
+                <!-- Android app <a href="">GitHub</a>. -->
+                Android app GitHub coming soon.
+                <br><br>Don't have a GitHub?
+                <br>info@ungender.me
+                <br><br>
+               
+              </p>
+            </div>
 
           </div>
 
@@ -101,7 +100,7 @@
               <p>
                 <a href="https://play.google.com/store/apps/details?id=com.ungenderme">
                   <img src="includes/en_generic_rgb_wo_45.png" />
-                </a>
+                </a>                
               </p>
             </div>
           </div>
@@ -113,8 +112,6 @@
     <script src="includes/jquery-1.10.2.min.js"></script>
     <script src="includes/bootstrap.min.js"></script>
     <script src="includes/docs.min.js"></script>
-    <script src="includes/ready.js"></script>
-
 
 </body>
 </html>

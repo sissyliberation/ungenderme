@@ -16,6 +16,25 @@ h1.cover-heading {
 	position:relative;
 }
 
+.mastfoot img {
+	float:right;
+	padding-bottom:15px;
+
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS *
+
+	-webkit-transition: -webkit-filter .3s ease-in; /* chrome & safari */
+    -moz-transition: filter .3s ease-in; /* firefox and other gecko-based */
+    -ms-transition: filter .3s ease-in; /* ie 10+ */
+    -o-transition: filter .3s ease-in; /* opera */
+    transition: filter .3s ease-in; /* w3 (future standard) */
+}
+.mastfoot img:hover {
+	filter: none;
+	-webkit-filter: grayscale(0%);
+}
+
 textarea#originaltext, textarea#convertedtext {
 	background-color: #ccc;
 	margin-top:30px;
@@ -38,7 +57,8 @@ textarea#convertedtext {
 	float:right;
 }
 
-.mastfoot p {
+.mastfoot a {
+	color:black;
 	text-align: right;
 }
 

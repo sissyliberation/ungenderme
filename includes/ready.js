@@ -118,7 +118,7 @@ e.preventDefault();
 								words[i+1] = words[i+1].substring(0,words[i+1].length-1);
 							}
 							else if (i< words.length-1 &&
-								words[i+1].substring(words[i+1].length - 1) == "." ||
+								words[i+1].substring(words[i+1].length - 1)  == "." ||
 								words[i+1].substring(words[i+1].length - 1)  == "," ||
 								words[i+1].substring(words[i+1].length - 1)  == "?" ||
 								words[i+1].substring(words[i+1].length - 1)  == "!" ) {
